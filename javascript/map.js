@@ -183,7 +183,7 @@ Map = (function ($) {
 
 $(document).ready(function () {
   // Map.initialize($('#map'), '/data/RioGrandedoSul_MesoMicroMunicip.svg');
-  Map.initialize($('#map'), '/data/guatemalaLow.svg');
+  Map.initialize($('#map'), 'data/guatemalaLow.svg');
 
   $("#cta").click(function(e) {
     e.preventDefault();
