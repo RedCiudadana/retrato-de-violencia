@@ -80,7 +80,7 @@ Map = (function ($) {
   };
 
   function _loadEstupros(callback) {
-    $.getJSON('/data/dados_estupros.json', function (data) {
+    $.getJSON('data/dados_estupros.json', function (data) {
       Estupros = data;
       callback();
     });
