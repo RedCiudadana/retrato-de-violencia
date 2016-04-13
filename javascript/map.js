@@ -20,7 +20,7 @@ Map = (function ($) {
 
   function _setupCallbacks() {
     d3.selectAll('path.str3')
-      // .on('mouseover', _hoverRegion)
+      .on('mouseover', _hoverRegion)
       .on('click', _selectRegion);
   };
 
