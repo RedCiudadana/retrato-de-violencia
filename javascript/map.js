@@ -10,7 +10,7 @@ Map = (function ($) {
       _loadEstupros(function () {
         var focusedElementSlug = window.location.hash.replace('#', '');
         // Use Soledade as default
-        if (focusedElementSlug == '') { focusedElementSlug = 'soledade'; };
+        if (focusedElementSlug == '') { focusedElementSlug = 'guatemala'; };
         _focusInto(focusedElementSlug);
         _drawBars();
         _colorRegions();
@@ -20,7 +20,7 @@ Map = (function ($) {
 
   function _setupCallbacks() {
     d3.selectAll('path.str3')
-      .on('mouseover', _hoverRegion)
+      // .on('mouseover', _hoverRegion)
       .on('click', _selectRegion);
   };
 
@@ -41,8 +41,13 @@ Map = (function ($) {
     _draw_timeline(codigo);
     _showInfo(codigo);
     window.location.hash = $.slug(Estupros[codigo].nome);
-    if (_gaq) { _gaq.push(['_trackPageview', window.location.pathname +
-                                             window.location.hash]); }
+
+    if (_gaq) {
+      _gaq.push([
+        '_trackPageview',
+        window.location.pathname + window.location.hash
+      ]);
+    }
   };
 
   function _showInfo(codigo) {
@@ -112,7 +117,7 @@ Map = (function ($) {
         var d3RegionMap = d3.select('path.'+this.classList[0]),
             opacity = d3RegionMap.attr('style').replace(/.*: (.*);?/, '$1'),
             span = d3.select(this).select('span');
-        span.attr('style', span.attr('style') + '; background-color: rgba(220,20,60,'+ opacity +') !important;');
+        span.attr('style', span.attr('style') + '; background-color: rgba(51,92,144,'+ opacity +') !important;');
       });
   };
 
@@ -177,7 +182,8 @@ Map = (function ($) {
 })(jQuery);
 
 $(document).ready(function () {
-  Map.initialize($('#map'), '/data/RioGrandedoSul_MesoMicroMunicip.svg');
+  // Map.initialize($('#map'), '/data/RioGrandedoSul_MesoMicroMunicip.svg');
+  Map.initialize($('#map'), '/data/guatemalaLow.svg');
 
   $("#cta").click(function(e) {
     e.preventDefault();

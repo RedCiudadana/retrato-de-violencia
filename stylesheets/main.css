@@ -35,18 +35,18 @@ body {
   list-style: square inside;
 }
 .modal h4 {
-  color: crimson;
+  color: #335c90;
 }
 .header {
   font-size: 1em;
   padding: 1em 0;
-  color: crimson;
+  color: #335c90;
   overflow: hidden;
 }
 .header a {
   display: inline-block;
-  color: crimson;
-  border: 2px solid crimson;
+  color: #335c90;
+  border: 2px solid #335c90;
   border-radius: 4px;
   float: right;
   text-decoration: none;
@@ -59,8 +59,8 @@ body {
 }
 .header a:active {
   color: white;
-  background-color: crimson;
-  border-color: crimson;
+  background-color: #335c90;
+  border-color: #335c90;
 }
 .header h1 {
   margin: 0;
@@ -76,7 +76,7 @@ body {
 }
 .footer {
   clear: both;
-  background-color: crimson;
+  background-color: #335c90;
   color: white;
   padding: 1em 0;
   overflow: hidden;
@@ -103,7 +103,7 @@ body {
   padding: 1em;
 }
 .colophon .supported-by strong {
-  color: crimson;
+  color: #335c90;
   display: block;
 }
 .colophon .supported-by a {
@@ -113,7 +113,7 @@ body {
   border-radius: 4px;
 }
 .colophon .supported-by a:hover {
-  border-color: crimson;
+  border-color: #335c90;
 }
 .colophon .supported-by a img {
   max-height: 50px;
@@ -160,7 +160,7 @@ body {
 #info {
   margin-top: 20px;
   margin-right: 340px;
-  background: crimson;
+  background: #335c90;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -175,11 +175,13 @@ body {
   vertical-align: top;
 }
 #map {
-  width: 600px;
-  height: 600px;
+  margin-top: 50px;
+  margin-left: 104px;
+  width: 496px;
+  height: 550px;
 }
 h3 {
-  color: crimson;
+  color: #335c90;
   font-size: 2em;
   margin: 0;
 }
@@ -226,12 +228,12 @@ h3 {
   width: 600px;
 }
 path.str3 {
-  fill: crimson;
+  fill: #335c90;
   fill-opacity: 0;
 }
 path.hover {
   stroke-opacity: .5;
-  stroke: crimson;
+  stroke: #335c90;
   stroke-width: 1500px;
   cursor: pointer;
 }
